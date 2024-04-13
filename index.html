@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cointer">
+        <header>Registration</header>
+        <form>
+            <div class="form_first">
+                <span class="title">Prosonal_details</span>
+                <div class="frist_detail">
+                    <div class="name">
+                        <label>Full Name:</label><br>
+                        <input type="text" placeholder="enter your name" id="frist_detail">
+                    </div>
+                    <div class="brith_date">
+                        <label>brith_date:</label><br>
+                        <input type="date" placeholder="enter your brith_date" id="brith_date">
+                    </div>
+                    <div class="Email">
+                        <label>Email:</label><br>
+                        <input type="email" placeholder="yyyyyy@gamilcom" id="Email">
+                    </div>
+                </div>
+                <!---=========================scoend row================== -->
+                <div class="scoend_datils">
+                    <div class="phone_number">
+                        <label>Phone:</label><br>
+                        <input type="tel" placeholder="xxxx-xxxxxx"pattern="{0-9}" required id="phone_number">
+                    </div>
+                    <div class="url_link">
+                        <label>url:</label><br>
+                        <input type="url" placeholder="enter your link"required id="url_link">
+                    </div>
+                    <div class="timing">
+                        <label>time:</label><br>
+                        <input type="time" placeholder="enter your time" id="timing">
+                    </div>
+
+                </div>
+
+                <!--==========================thrid_detials============= -->
+
+                <div class="thrid_details">
+                    <div class="gender">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" value="male" id="gender">male
+                        <input type="radio" name="gender" value="female" id="gender">Female
+                    </div>
+                    <div class="country">
+                        <label for="country"></label>Country:</label>
+                        <input type="checkbox" name="india" value="india" id="country">india
+                        <input type="checkbox" name="america" value="america" id="country">america
+                    </div>
+                         <div class="religin">
+                        <label for="religin">
+                            Religin
+                        </label>
+                        <select name="religin" id="religin" >religin
+                            <option value="select a Religin">Select a Religin</option>
+                            <option value="Hindu" id="religin">Hindu</option>
+                            <option value="other" id="religin">other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--==============a fourth_details=========  -->
+
+                <div id="forth_details">
+                    <label for="photo_file">photo_file
+                    </label>
+                    <input type="file" placeholder="photo_file" id="forth_details">
+                </div>
+                <!-- ================submit============= -->
+                <div class="submit_button">
+                    <button id="button"type="button" onclick="storeInput()">submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js">
+
+    </script>
+  
+<!--======================table form==========================-->
+ 
+  
+      
+<div class="table_cointer">
+    <div class="table_from_cointer">
+        
+        <table>
+            <thead>
+                <th>fullname</th>
+                <th>brithdate</th>
+                <th>phone</th>
+                <th>url</th>
+                <th>time</th>
+                <th>gender</th>
+                <th>country</th>
+                <th>religin</th>
+                <th>photo</th>
+                <th>action</th>
+            </thead>
+        </table>
+
+  </div>
+</div>
+
+</body>
+
+</html>
